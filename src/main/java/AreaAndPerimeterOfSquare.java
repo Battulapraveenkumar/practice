@@ -4,7 +4,7 @@ public class AreaAndPerimeterOfSquare {
         this.Length=Length;
 
     }
-    public int Area() {
-        return Length*Length;
+    public int Perimeter() {
+        return 4*Length;
     }
 }
