@@ -4,35 +4,35 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AreaAndPerimeterOfRectangleTest {
     @Test
-    public void ToReturnAreaOfRectanglePositiveLengthAndPositiveWidth()
+    public void ToReturnPerimeterOfRectanglePositiveLengthAndPositiveWidth()
     {
         AreaAndPerimeterOfRectangle obj = new AreaAndPerimeterOfRectangle(4,5);
-        int expectedArea = 20;
-        int actualArea = obj.Area();
+        int expectedArea = 18;
+        int actualArea = obj.Perimeter();
         assertEquals(expectedArea,actualArea);
     }
     @Test
-    public void ToReturnAreaOfRectanglePositiveLengthAndNegativeWidth()
+    public void ToReturnPerimeterOfRectanglePositiveLengthAndNegativeWidth()
     {
         AreaAndPerimeterOfRectangle obj = new AreaAndPerimeterOfRectangle(4,-5);
-        int expectedArea = -20;
-        int actualArea = obj.Area();
+        int expectedArea = -2;
+        int actualArea = obj.Perimeter();
         assertEquals(expectedArea,actualArea);
     }
     @Test
-    public void ToReturnAreaOfRectangleNegativeLengthAndPositiveWidth()
+    public void ToReturnPerimeterOfRectangleNegativeLengthAndPositiveWidth()
     {
         AreaAndPerimeterOfRectangle obj = new AreaAndPerimeterOfRectangle(-4,5);
-        int expectedArea = -20;
-        int actualArea = obj.Area();
+        int expectedArea = 2;
+        int actualArea = obj.Perimeter();
         assertEquals(expectedArea,actualArea);
     }
     @Test
-    public void ToReturnAreaOfRectangleNegativeLengthAndNegativeWidth()
+    public void ToReturnPerimeterOfRectangleNegativeLengthAndNegativeWidth()
     {
         AreaAndPerimeterOfRectangle obj = new AreaAndPerimeterOfRectangle(-4,-5);
-        int expectedArea = 20;
-        int actualArea = obj.Area();
+        int expectedArea = -18;
+        int actualArea = obj.Perimeter();
         assertEquals(expectedArea,actualArea);
     }
 }
